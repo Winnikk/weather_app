@@ -1,0 +1,20 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}
+    Weather in {{ location.city }}, {{ location.country }}
+{% endblock %}
+
+{% block body %}
+    <div>
+        <h1>{{ location.city }}, {{ location.country }}</h1>
+        <tr>
+            {% for measurement in measurements %}
+            <td> {{ measurement.date.format('d/m/Y') }}: {{ measurement.temperature }}&deg;C</td></tr></br>
+            {% endfor %}
+        </tr>
+    </div>
+        <h2>Menu</h2>
+        <a href="{{ path('app_location_index') }}", class="btn btn-primary">Go to locations</a></br>
+        <a href="{{ path('app_measurement_index') }}", class="btn btn-primary">Go to measurements</a>
+    </div>
+{% endblock %}

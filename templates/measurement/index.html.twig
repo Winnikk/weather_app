@@ -1,0 +1,43 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Measurement index{% endblock %}
+
+{% block body %}
+    <h1>Measurement index</h1>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Location</th>
+                <th>Date</th>
+                <th>Temperature</th>
+                <th>actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for measurement in measurements %}
+            <tr>
+                <td>{{ measurement.id }}</td>
+                <td><a href="{{ path('app_location_show', {'id': measurement.location.id}) }}">{{ measurement.location.city }}</a></td>
+                <td>{{ measurement.date ? measurement.date|date('Y-m-d') : '' }}</td>
+                <td>{{ measurement.temperature }}</td>
+                <td>
+                    <a href="{{ path('app_measurement_show', {'id': measurement.id}) }}">show</a>
+                    <a href="{{ path('app_measurement_edit', {'id': measurement.id}) }}">edit</a>
+                </td>
+            </tr>
+        {% else %}
+            <tr>
+                <td colspan="4">no records found</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+    </div>
+        <h2>Menu</h2>
+        <a href="{{ path('app_location_index') }}", class="btn btn-primary">Go to locations</a></br>
+        <a href="{{ path('app_measurement_new') }}", class="btn btn-primary">Create new</a>
+    </div>
+
+{% endblock %}
