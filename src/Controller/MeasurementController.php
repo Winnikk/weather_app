@@ -10,6 +10,8 @@ use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
+use Sensio\Bundle\FrameworkExtraBundle\Configuration\Security;
+use Sensio\Bundle\FrameworkExtraBundle\Configuration\IsGranted;
 
 #[Route('/measurement')]
 class MeasurementController extends AbstractController
@@ -23,6 +25,9 @@ class MeasurementController extends AbstractController
     }
 
     #[Route('/new', name: 'app_measurement_new', methods: ['GET', 'POST'])]
+    /**
+     * @IsGranted ("ROLE_MEASUREMENTS_CREATE", message="No access!")
+     */
     public function new(Request $request, EntityManagerInterface $entityManager): Response
     {
         $measurement = new Measurement();
@@ -51,6 +56,9 @@ class MeasurementController extends AbstractController
     }
 
     #[Route('/{id}/edit', name: 'app_measurement_edit', methods: ['GET', 'POST'])]
+    /**
+     * @IsGranted ("ROLE_MEASUREMENTS_EDIT", message="No access!")
+     */
     public function edit(Request $request, Measurement $measurement, EntityManagerInterface $entityManager): Response
     {
         $form = $this->createForm(MeasurementType::class, $measurement);
@@ -69,6 +77,9 @@ class MeasurementController extends AbstractController
     }
 
     #[Route('/{id}', name: 'app_measurement_delete', methods: ['POST'])]
+    /**
+     * @IsGranted ("ROLE_MEASUREMENTS_DELETE", message="No access!")
+     */
     public function delete(Request $request, Measurement $measurement, EntityManagerInterface $entityManager): Response
     {
         if ($this->isCsrfTokenValid('delete'.$measurement->getId(), $request->request->get('_token'))) {

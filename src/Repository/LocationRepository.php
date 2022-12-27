@@ -5,6 +5,9 @@ namespace App\Repository;
 use App\Entity\Location;
 use Doctrine\Bundle\DoctrineBundle\Repository\ServiceEntityRepository;
 use Doctrine\Persistence\ManagerRegistry;
+use Exception;
+use Symfony\Component\HttpKernel\Exception\NotFoundHttpException;
+use function PHPUnit\Framework\throwException;
 
 /**
  * @extends ServiceEntityRepository<Location>
@@ -39,28 +42,17 @@ class LocationRepository extends ServiceEntityRepository
         }
     }
 
-//    /**
-//     * @return Location[] Returns an array of Location objects
-//     */
-//    public function findByExampleField($value): array
-//    {
-//        return $this->createQueryBuilder('l')
-//            ->andWhere('l.exampleField = :val')
-//            ->setParameter('val', $value)
-//            ->orderBy('l.id', 'ASC')
-//            ->setMaxResults(10)
-//            ->getQuery()
-//            ->getResult()
-//        ;
-//    }
+    public function findByCountryAndCity(string $country, string $city)
+    {
+        try {
+            $qb = $this->createQueryBuilder('l');
+            $qb->where('l.country = :country AND l.city = :city')
+                ->setParameter('country', $country)
+                ->setParameter('city', $city);
 
-//    public function findOneBySomeField($value): ?Location
-//    {
-//        return $this->createQueryBuilder('l')
-//            ->andWhere('l.exampleField = :val')
-//            ->setParameter('val', $value)
-//            ->getQuery()
-//            ->getOneOrNullResult()
-//        ;
-//    }
+            return $qb->getQuery()->getResult()[0];
+        } catch(Exception $e) {
+            throw new NotFoundHttpException("No location found");
+        }
+    }
 }

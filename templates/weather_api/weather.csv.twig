@@ -1,0 +1,10 @@
+{{ location.id }},
+{{ location.country }},
+{{ location.city }},
+{{ location.latitude }},
+{{ location.longtitude }},
+{% for measurement in measurements %}
+    {{ measurement.id }},
+    {{ measurement.date|date('d/m/Y') }},
+    {{ measurement.temperature }}
+{% endfor %}

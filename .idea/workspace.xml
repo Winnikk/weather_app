@@ -1,51 +1,57 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="c46e51f8-1b0e-4dd7-8c84-fbf6b0832518" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/migrations/Version20221021204753.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/migrations/Version20221021204936.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/migrations/Version20221021204954.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.env.test" beforeDir="false" afterPath="$PROJECT_DIR$/.env.test" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Service/WeatherUtils.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/login/index.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/weather_api/weather.csv.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/weather_api/weather.json.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/phpunit.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/phpunit.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/weather-app.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/weather-app.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config/bundles.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/bundles.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/packages/cache.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/cache.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/packages/debug.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/debug.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/packages/doctrine.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/doctrine.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/packages/doctrine_migrations.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/doctrine_migrations.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/packages/framework.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/framework.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/packages/mailer.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/mailer.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/packages/messenger.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/messenger.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/packages/monolog.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/monolog.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/packages/notifier.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/notifier.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/packages/routing.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/routing.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config/packages/security.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/security.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/packages/sensio_framework_extra.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/sensio_framework_extra.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/packages/translation.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/translation.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config/packages/twig.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/twig.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/packages/validator.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/validator.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/packages/web_profiler.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/web_profiler.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/preload.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/preload.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config/routes.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/routes.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/routes/annotations.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/routes/annotations.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/routes/framework.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/routes/framework.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/routes/web_profiler.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/routes/web_profiler.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/services.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/services.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker-compose.override.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.override.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/migrations/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/migrations/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/phpunit.xml.dist" beforeDir="false" afterPath="$PROJECT_DIR$/phpunit.xml.dist" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entity/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Kernel.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Kernel.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Repository/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/src/Repository/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/migrations/Version20221021204753.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/migrations/Version20221021204936.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/migrations/Version20221021204954.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/migrations/Version20221021205209.php" beforeDir="false" afterPath="$PROJECT_DIR$/migrations/Version20221021205209.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/LocationController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/LocationController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/MeasurementController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/MeasurementController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/WeatherController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/WeatherController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/Location.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Location.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/Measurement.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Measurement.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Form/LocationType.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Form/LocationType.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Form/MeasurementType.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Form/MeasurementType.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Repository/LocationRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Repository/LocationRepository.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Repository/MeasurementRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Repository/MeasurementRepository.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/symfony.lock" beforeDir="false" afterPath="$PROJECT_DIR$/symfony.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/bootstrap.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/bootstrap.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/translations/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/translations/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/location/_delete_form.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/location/_delete_form.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/location/_form.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/location/_form.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/location/edit.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/location/edit.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/location/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/location/index.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/location/new.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/location/new.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/location/show.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/location/show.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/measurement/_delete_form.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/measurement/_delete_form.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/measurement/_form.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/measurement/_form.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/measurement/edit.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/measurement/edit.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/measurement/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/measurement/index.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/measurement/new.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/measurement/new.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/measurement/show.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/measurement/show.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/weather/city.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/weather/city.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,6 +69,7 @@
     <setting file="file://$PROJECT_DIR$/.env" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/config/routes.yaml" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/docker-compose.yml" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/DataFixtures/AppFixtures.php" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -138,7 +145,6 @@
       <path value="$PROJECT_DIR$/vendor/nikic/php-parser" />
       <path value="$PROJECT_DIR$/vendor/symfony/yaml" />
       <path value="$PROJECT_DIR$/vendor/doctrine/dbal" />
-      <path value="$PROJECT_DIR$/vendor/symfony/security-guard" />
       <path value="$PROJECT_DIR$/vendor/symfony/deprecation-contracts" />
       <path value="$PROJECT_DIR$/vendor/doctrine/sql-formatter" />
       <path value="$PROJECT_DIR$/vendor/symfony/dependency-injection" />
@@ -203,6 +209,9 @@
       <path value="$PROJECT_DIR$/vendor/symfony/console" />
       <path value="$PROJECT_DIR$/vendor/symfony/framework-bundle" />
       <path value="$PROJECT_DIR$/vendor/symfony/process" />
+      <path value="$PROJECT_DIR$/vendor/symfony/apache-pack" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/doctrine-fixtures-bundle" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/data-fixtures" />
     </include_path>
   </component>
   <component name="ProjectId" id="2GJn2OP50AjP35yx3601HFieOJe" />
@@ -216,15 +225,33 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;last_opened_file_path&quot;: &quot;/home/kacper/Documents/University/aplikacje_internetowe/ai2/source/weather-app&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RunManager">
+  <component name="RunManager" selected="PHPUnit.MeasurementTest">
+    <configuration name="MeasurementTest" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <CommandLine>
+        <PhpTestInterpreterSettings>
+          <option name="interpreterName" value="PHP 8.0" />
+        </PhpTestInterpreterSettings>
+      </CommandLine>
+      <TestRunner class="App\Tests\MeasurementTest" configuration_file="$PROJECT_DIR$/phpunit.xml.dist" file="$PROJECT_DIR$/tests/MeasurementTest.php" scope="Class" />
+      <method v="2" />
+    </configuration>
     <configuration name="phpunit.xml.dist" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
       <TestRunner scope="XML" />
       <method v="2" />
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="PHPUnit.MeasurementTest" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -237,7 +264,14 @@
       <workItem from="1666115348079" duration="3946000" />
       <workItem from="1666199550513" duration="7807000" />
       <workItem from="1666394652658" duration="6346000" />
-      <workItem from="1666462793305" duration="11090000" />
+      <workItem from="1666462793305" duration="11901000" />
+      <workItem from="1666525090445" duration="3441000" />
+      <workItem from="1668637223675" duration="17038000" />
+      <workItem from="1668933955366" duration="393000" />
+      <workItem from="1668934942773" duration="4207000" />
+      <workItem from="1671278396755" duration="2342000" />
+      <workItem from="1671379827995" duration="21662000" />
+      <workItem from="1671787770748" duration="31075000" />
     </task>
     <servers />
   </component>

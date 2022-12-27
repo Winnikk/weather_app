@@ -9,11 +9,15 @@ use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
+use Sensio\Bundle\FrameworkExtraBundle\Configuration\IsGranted;
 
 #[Route('/location')]
 class LocationController extends AbstractController
 {
     #[Route('/', name: 'app_location_index', methods: ['GET'])]
+    /**
+     * @IsGranted ("ROLE_LOCATIONS_INDEX", message="No access!")
+     */
     public function index(LocationRepository $locationRepository): Response
     {
         return $this->render('location/index.html.twig', [
@@ -22,6 +26,9 @@ class LocationController extends AbstractController
     }
 
     #[Route('/new', name: 'app_location_new', methods: ['GET', 'POST'])]
+    /**
+     * @IsGranted ("ROLE_LOCATIONS_CREATE", message="No access!")
+     */
     public function new(Request $request, LocationRepository $locationRepository): Response
     {
         $location = new Location();
@@ -41,6 +48,9 @@ class LocationController extends AbstractController
     }
 
     #[Route('/{id}', name: 'app_location_show', methods: ['GET'])]
+    /**
+     * @IsGranted ("ROLE_LOCATIONS_SHOW", message="No access!")
+     */
     public function show(Location $location): Response
     {
         return $this->render('location/show.html.twig', [
@@ -49,6 +59,9 @@ class LocationController extends AbstractController
     }
 
     #[Route('/{id}/edit', name: 'app_location_edit', methods: ['GET', 'POST'])]
+    /**
+     * @IsGranted ("ROLE_LOCATIONS_EDIT", message="No access!")
+     */
     public function edit(Request $request, Location $location, LocationRepository $locationRepository): Response
     {
         $form = $this->createForm(LocationType::class, $location);
@@ -67,6 +80,9 @@ class LocationController extends AbstractController
     }
 
     #[Route('/{id}', name: 'app_location_delete', methods: ['POST'])]
+    /**
+     * @IsGranted ("ROLE_LOCATIONS_DELETE", message="No access!")
+     */
     public function delete(Request $request, Location $location, LocationRepository $locationRepository): Response
     {
         if ($this->isCsrfTokenValid('delete'.$location->getId(), $request->request->get('_token'))) {

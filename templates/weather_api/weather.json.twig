@@ -1,0 +1,18 @@
+{
+    "location": {
+        "id": {{ location.id }},
+        "country": {{ location.country }},
+        "city": {{ location.city }},
+        "latitude": {{ location.latitude }},
+        "longitude": {{ location.longtitude }}
+    },
+    "measurements": [
+        {% for measurement in measurements -%}
+        {
+            "id": {{ measurement.id }},
+            "date": {{ measurement.date|date('d/m/Y') }},
+            "celsius": {{ measurement.temperature }}
+        }
+        {%- endfor %}
+    ]
+}

@@ -64,4 +64,9 @@ class Measurement
 
         return $this;
     }
+
+    public function convertToFahrenheit(): float|int
+    {
+        return ($this->temperature * 9/5) + 32;
+    }
 }

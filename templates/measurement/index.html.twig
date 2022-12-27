@@ -23,8 +23,8 @@
                 <td>{{ measurement.date ? measurement.date|date('Y-m-d') : '' }}</td>
                 <td>{{ measurement.temperature }}</td>
                 <td>
-                    <a href="{{ path('app_measurement_show', {'id': measurement.id}) }}">show</a>
-                    <a href="{{ path('app_measurement_edit', {'id': measurement.id}) }}">edit</a>
+                    <a href="{{ path('app_measurement_show', {'id': measurement.id}) }}" class="btn btn-primary">show</a>
+                    <a href="{{ path('app_measurement_edit', {'id': measurement.id}) }}" class="btn btn-primary">edit</a>
                 </td>
             </tr>
         {% else %}
@@ -36,8 +36,9 @@
     </table>
     </div>
         <h2>Menu</h2>
-        <a href="{{ path('app_location_index') }}", class="btn btn-primary">Go to locations</a></br>
-        <a href="{{ path('app_measurement_new') }}", class="btn btn-primary">Create new</a>
+        <a href="{{ path('app_location_index') }}" class="btn btn-primary">Go to locations</a>
+        <a href="{{ path('app_measurement_new') }}" class="btn btn-primary">Create new</a>
+        <a href="{{ path('app_logout') }}" class="btn btn-primary">Logout</a>
     </div>
 
 {% endblock %}

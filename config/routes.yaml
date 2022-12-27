@@ -2,4 +2,24 @@ weather_in_city:
   path: /weather/{country}/{city}
   controller: App\Controller\WeatherController:cityAction
   requirements:
-    city: \d+
+    country: \w+
+    city: \w+
+app_logout:
+  path: /logout
+  methods: GET
+api_weather_json:
+  path: /api/weather.json
+  controller: App\Controller\WeatherApiController:weatherActionJSON
+  methods: POST
+api_weather_csv:
+  path: /api/weather.csv
+  controller: App\Controller\WeatherApiController:weatherActionCSV
+  methods: POST
+api_weather_twig_json:
+  path: /api/weather_twig.json
+  controller: App\Controller\WeatherApiController:weatherActionTwigJson
+  methods: POST
+api_weather_twig_csv:
+  path: /api/weather_twig.csv
+  controller: App\Controller\WeatherApiController:weatherActionTwigCsv
+  methods: POST
